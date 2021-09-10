@@ -12,7 +12,7 @@
     <div class="warrper">
     <div class="container">
         <div class="image">
-            <img src="image__music1.jpg">
+            <img src="image/image__music1.jpg">
         </div>
         <div class="info">
             <div class="title">Double Take</div>
@@ -75,7 +75,7 @@
             Do you feel the love?<br>
         </div>
         <audio id="audio__main" controls>
-            <source src="music1.mp3">
+            <source src="music/music1.mp3">
         </audio>
     </div>
 </div>
