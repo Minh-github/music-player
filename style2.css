@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
     height: 500px;
     background-color: none;
     position: relative;
-    margin: 50px auto;
+    margin: 25px auto;
     border-radius: 10px 10px 25px 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -64,17 +64,51 @@ body::-webkit-scrollbar{
     font-weight: 500;
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
-    height: 130px;
+    height: 125px;
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
 }
 .lyric::-webkit-scrollbar{
     display: none;
 }
 #audio__main{
-    width: 300px;
+    width: 100%;
+    transform: translateY(20px);
     background-color: #f2f4f6;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+@media (min-width: 550px){
+    body{
+        height: 400px;
+    }
+    .warrper{
+        position: relative;
+    }
+    .container{
+        width: 600px;
+        height: 350px;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .container .lyric{
+        height: 230px;
+        position: absolute;
+        top: 10px;
+        transform: translateX(55%);
+    }
+    .container::-webkit-scrollbar{
+        display: none;
+    }
+    #audio__main{
+        width: 100%;
+        transform: translateY(20px);
+        background-color: #f2f4f6;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
